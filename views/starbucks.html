@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/starbucks.css" />
+    <title>Starbucks Clone Coding</title>
+  </head>
+
+  <body>
+    <a href="../index.html"><button>Back</button></a>
+    <hr />
+
+    <div class="bgColor">
+      <h3 class="h1Color">STARBUCKS COFFEE (Function Examples)</h3>
+      <button class="longButton" onclick="changeBGColor ('gray')">
+        Dark Mode
+      </button>
+      <button class="longButton" onclick="changeBGColor ('white')">
+        Bright Mode
+      </button>
+      <br /><br />
+      <button onclick="changeColor ('blue')">Blue</button>
+      <button onclick="changeColor ('green')">Green</button>
+      <button onclick="changeColor ('black')">Black</button>
+      <button onclick="changeColor ('cyan')">Cyan</button>
+      <button onclick="changeColor ('brown')">Brown</button>
+      <button onclick="changeColor ('red')">Red</button>
+      <br />
+    </div>
+    <br />
+    <div>
+      <table>
+        <tr>
+          <th><img src="../img/starbucks_img/SBwater.jpeg" alt="img" /></th>
+          <th>
+            <img src="../img/starbucks_img/SBproportion.jpeg" alt="img" />
+          </th>
+          <th><img src="../img/starbucks_img/SBgrind.jpeg" alt="img" /></th>
+          <th><img src="../img/starbucks_img/SBfreshness.jpeg" alt="img" /></th>
+        </tr>
+        <tr>
+          <th>Water</th>
+          <th>Proportion</th>
+          <th>Grind</th>
+          <th>Freshness</th>
+        </tr>
+        <tr>
+          <th><button onclick="waterDetail()">Detail</button></th>
+          <th><button onclick="proportionDetail()">Detail</button></th>
+          <th><button onclick="grindDetail()">Detail</button></th>
+          <th><button onclick="freshnessDetail()">Detail</button></th>
+        </tr>
+      </table>
+      <hr />
+
+      <form>
+        <h1>Survey<span class="mobile">(Mobile Version)</span></h1>
+        <!--name table-->
+        <table>
+          <tr>
+            <td>
+              <h3>First name*</h3>
+            </td>
+            <td>
+              <h3>Last name*</h3>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <input
+                type="text"
+                name="FirstName"
+                pattern="[a-zA-Z]+"
+                required
+              />
+            </td>
+            <td>
+              <input type="text" name="LastName" pattern="[a-zA-Z]+" required />
+            </td>
+          </tr>
+        </table>
+
+        <!--Email input-->
+        <h3>E-mail*</h3>
+        <input
+          type="email"
+          size="42"
+          name="email"
+          pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+          required
+        />
+
+        <!--Phone and fax table-->
+        <table>
+          <tr>
+            <td>
+              <h3>Phone*</h3>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <input
+                type="text"
+                placeholder="E.g. 010-1111-2222"
+                name="Phone"
+                required
+              />
+            </td>
+          </tr>
+        </table>
+
+        <!--Birthday table-->
+        <table>
+          <tr>
+            <td>
+              <h3>Your Birthday</h3>
+            </td>
+          </tr>
+          <tr>
+            <td><input type="date" name="Start" /></td>
+          </tr>
+        </table>
+
+        <!--province input-->
+        <h3>Province*</h3>
+        <select name="Province" required>
+          <option>Chungcheongbuk-do</option>
+          <option>Chungcheongnam-do</option>
+          <option>Gangwon-do</option>
+          <option>Gyeonggi-do</option>
+          <option>Gyeongsangbuk-do</option>
+          <option>Gyeongsangnam-do</option>
+          <option>Jeollabuk-do</option>
+          <option>jeollanam-do</option>
+          <option>Jeju Special Self-governing Province</option>
+        </select>
+
+        <!--Favorite Coffee table-->
+        <h3>Your Favorite Coffee</h3>
+        <table name="Coffee">
+          <tr>
+            <td><input type="checkbox" />Cappuccino</td>
+            <td><input type="checkbox" />Espresso</td>
+          </tr>
+          <tr>
+            <td><input type="checkbox" />Cold Brew</td>
+            <td><input type="checkbox" />Latte</td>
+          </tr>
+        </table>
+
+        <!--relocate input-->
+        <h3>Do you have Starbucks Membership?</h3>
+        <input type="radio" name="relocate" checked />Yes
+        <input type="radio" name="relocate" />No
+        <input type="radio" name="relocate" />Not sure
+
+        <!--reference comments questions-->
+        <h3>Reference/Comments/Quesitons</h3>
+        <textarea cols="35" rows="7" name="Reference"></textarea>
+        <br />
+
+        <input
+          style="margin-left: 80px"
+          type="submit"
+          onclick="alert('Your survey has been sent.')"
+          value="Send Survey"
+        />
+      </form>
+    </div>
+    <script src="../js/starbucks.js"></script>
+  </body>
+</html>

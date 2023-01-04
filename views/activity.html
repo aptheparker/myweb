@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="../img/favicon.ico" />
+  <link rel="stylesheet" href="../css/style.css" />
+  <link rel="stylesheet" href="../css/activity.css" />
+  <title>Activity</title>
+</head>
+
+<body>
+  <a href="../index.html"><button>Back</button></a>
+  <hr>
+
+  <div class="sleep_img">
+    <img src="../img/activity_img/sleep.png" alt="sleep">
+  </div>
+
+  <div class="random">
+    <div class="title">Guessing Game <span class="mobile">(Mobile Version)</span></div>
+    <p>Guess a number: <br>
+      (from 1 to 100)
+    </p>
+    <input type='number' id="random_value" placeholder="Ex) 9">
+  </div>
+
+  <div class="random_start">
+    <div class="btn_wrap">
+      <button class="newNum_btn">New number</button>
+      <button class="submit_btn">Submit</button>
+      <div class="click_img">
+        <img src="../img/activity_img/click.png" alt="click" />
+      </div>
+    </div>
+  </div>
+
+  <hr>
+
+  <div class="savings">
+    <div class="title">Savings Calculator <span class="mobile">(Mobile Version)</span></div>
+    <p>
+      나는 매일마다
+      <input type="text" id="field_value" placeholder="Ex) 10000" />원씩
+      모을 것이다.
+    </p>
+  </div>
+
+  <div class="savings_start">
+    <div class="btn_wrap">
+      <button class="start_btn">그럼 얼마나 모을 수 있을까?</button>
+      <div class="click_img">
+        <img src="../img/activity_img/click.png" alt="click" />
+      </div>
+    </div>
+  </div>
+
+  <hr>
+
+  <br><br>
+
+
+  <div class="result_loading">
+    <div class="img_wrap">
+      <img src="../img/activity_img/moon.png" alt="loading" />
+    </div>
+  </div>
+
+  <div class="result">
+    <div class="result_wrap">
+      나는 매일마다 <span class="field_result"></span>원씩 모으면 1년 동안
+      <span class="total_result"></span>원을 모을 수 있다.
+    </div>
+    <div class="button">
+      <button class="modal_btn">돈 모으러 가기~</button>
+    </div>
+  </div>
+
+  <section id="modal">
+    <div class="modal_wrap">
+      <div class="cheer">
+        <h1>화이팅!!!</h1>
+        <h3>응원합니다!!!</h3>
+      </div>
+
+      <div class="monkey_img">
+        <img src="../img/activity_img/monkey.png" alt="monkey" />
+      </div>
+
+      <div class="btn">
+        <button class="close_btn">종료하고 진짜 돈모으러 가기~</button>
+        <p>(그냥 닫기 버튼입니다.)</p>
+      </div>
+    </div>
+  </section>
+
+  <script src="../js/script.js"></script>
+</body>
+
+</html>

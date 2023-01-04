@@ -1,0 +1,286 @@
+/* header */
+header {
+  width: 100%;
+  position: fixed;
+  z-index: 10000;
+  top: 0;
+  padding: 14px 16px;
+  display: flex;
+  font-family: 'Noto Sans KR';
+  font-size: 20px;
+  background-color: black;
+  color: white;
+}
+
+header .logo {
+  width: 20px;
+  height: auto;
+}
+
+header .logo img {
+  width: 100%;
+}
+
+/* Style the navigation menu */
+nav {
+  width: 100%;
+  background-color: #333;
+  position: fixed;
+  top: 45px;
+  z-index: 10000;
+}
+
+/* Hide the links inside the navigation menu (except for logo/home) */
+nav #myLinks {
+  display: none;
+}
+
+/* Style navigation menu links */
+nav a {
+  color: white;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-family: 'OTEnjoystoriesBA';
+  font-size: 20px;
+  display: block;
+}
+
+/* Style the hamburger menu */
+nav a.icon {
+  background: black;
+  display: block;
+  position: fixed;
+  right: 0;
+  top: 43px;
+  border: solid 1px white;
+}
+
+nav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.active {
+  background-color: grey;
+  color: white;
+}
+
+/*home*/
+#home {
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-evenly;
+  border: solid 5px white;
+  align-items: center;
+  padding: 100px;
+}
+
+.ap_img {
+  width: 200px;
+  height: auto;
+}
+
+.ap_img img {
+  width: 100%;
+  height: auto;
+}
+
+.symbol_img {
+  width: 400px;
+  height: auto;
+}
+
+.symbol_img img {
+  width: 100%;
+  height: auto;
+}
+
+/* content */
+#bio {
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: solid white 5px;
+  padding: 100px;
+}
+
+#github_link {
+  color: cyan;
+}
+
+#experience .box-container {
+  display: grid;
+  gap: 30px;
+  grid-template-columns: auto auto auto;
+}
+
+#experience .box {
+  width: 400px;
+  border: 3px solid rgb(6, 247, 6);
+  border-radius: 50px;
+  text-align: center;
+  padding: 30px;
+}
+
+#experience .box:hover {
+  border: 3px solid cyan;
+}
+
+#experience .box img {
+  width: 200px;
+  height: 200px;
+}
+
+#experience .box li {
+  font-family: monospace;
+  font-size: 20px;
+  color: white;
+}
+
+/* contact */
+#contact {
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: solid white 5px;
+  padding: 100px;
+}
+
+#contact img {
+  width: 400px;
+  height: auto;
+}
+
+#contact .info {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+#contact p {
+  position: absolute;
+  font-family: 'GmarketSansBold';
+  font-size: 18px;
+  color: orange;
+  line-height: 1.7;
+}
+
+/* more */
+#more {
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: solid white 5px;
+  padding: 100px;
+}
+
+#more .more_title {
+  font-family: 'GmarketSansBold';
+  font-size: 36px;
+  color: white;
+  margin-bottom: 50px;
+}
+
+#more .button_group {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.linkBtn {
+  font-family: 'GmarketSansBold';
+  font-size: 40px;
+  color: black;
+  background-color: pink;
+  border-radius: 30px;
+  cursor: pointer;
+}
+
+/* copyright */
+#copyright {
+  margin-top: 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#copyright img {
+  width: 100px;
+  height: auto;
+  margin-bottom: 20px;
+}
+
+#copyright p {
+  font-size: 18px;
+  color: white;
+  line-height: 1.7;
+}
+
+/* for mobile */
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+  #home {
+    flex-direction: column;
+  }
+
+  #home .ap_img {
+    width: 150px;
+  }
+
+  #home .symbol_img {
+    width: 250px;
+  }
+
+  #experience .box-container {
+    grid-template-columns: auto;
+  }
+
+  #experience .box {
+    width: 200px;
+  }
+
+  #experience .box li {
+    font-size: 12px;
+  }
+
+  #experience .box img {
+    width: 200px;
+  }
+
+  .linkBtn {
+    font-size: 20px;
+  }
+}
+
+/* for tablet */
+@media only screen and (min-width: 481px) and (max-width: 767px) {
+  #home .ap_img {
+    width: 150px;
+  }
+
+  #home .symbol_img {
+    width: 250px;
+  }
+
+  #experience .box-container {
+    grid-template-columns: auto auto;
+  }
+
+  #experience .box {
+    width: 300px;
+  }
+
+  #experience .box li {
+    font-size: 16px;
+  }
+
+  #experience .box img {
+    width: 250px;
+  }
+
+  .linkBtn {
+    font-size: 30px;
+  }
+}
