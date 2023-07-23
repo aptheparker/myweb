@@ -21,8 +21,19 @@ body {
   width: 150px;
   height: 30px;
   background-color: white;
-  border-radius: 15px;
+  border-radius: 10px;
   cursor: pointer;
+}
+
+.go-button:hover{
+  background-color: #e6e6e6;
+}
+
+.go-button a{
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+  font-family: 'Roboto', sans-serif;
 }
 
 @media screen and (max-width: 768px) {
