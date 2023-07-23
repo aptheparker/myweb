@@ -2,43 +2,79 @@
 body {
   margin: 0;
   padding: 0;
-}
-
-/* Make the main-container div fill the entire viewport */
-.main-container {
+  font-family: cursive;
   width: 100%;
   height: 100vh; /* Set the height to the full viewport height */
-  background-image: url('../img/ap-logo.png'); /* Replace 'your-image.jpg' with the actual image filename */
-  background-size: cover;
+  background-image: url("../img/main-background.png"); /* Replace 'your-image.jpg' with the actual image filename */
   background-position: center;
   background-repeat: no-repeat;
 }
 
-.go-button{
+.image-container img{
+  width: 200px;
+  height: 300px;
+}
+
+.main-container{
+  width: 100%;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 64px;
+}
+
+.main-title {
+  font-size: 64px;
+  font-weight: bold;
+}
+
+.nav-list{
+  display:flex;
+  justify-content:space-evenly;
+  align-items:center;
+  list-style:none;
+  margin: 0px;
+  padding: 0px;
+  
+}
+
+.nav-list a{
+  text-decoration:none;
+  color:black;
+  font-size: 32px;
+}
+
+.go-button {
   position: fixed;
   bottom: 30px;
   right: 30px;
-  width: 150px;
-  height: 30px;
-  background-color: white;
-  border-radius: 10px;
+  background-color: transparent;
+  border: none;
   cursor: pointer;
 }
 
-.go-button:hover{
-  background-color: #e6e6e6;
-}
-
-.go-button a{
+.go-button a {
   text-decoration: none;
   color: black;
-  font-weight: bold;
-  font-family: 'Roboto', sans-serif;
+  font-family: cursive;
+  font-size: 32px;
 }
 
-@media screen and (max-width: 768px) {
+@media (max-width: 768px) {
+  .image-container img{
+    width: 80px;
+    height: 120px;
+  }
   .main-container{
-    background-size: contain;
-    background-color: black;
+    font-size: 32px;
+  }
+  .go-button a {
+    font-size: 16px;
+  }
+  .main-title {
+    font-size: 32px;
+  }
+  .nav-list a{
+    font-size: 16px;
   }
 }
