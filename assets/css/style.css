@@ -16,26 +16,52 @@ body {
 }
 
 /* index.html */
-.main-image-container img {
-  width: 200px;
-  height: 300px;
+
+.main-image-container{
+  padding: 30px
 }
 
-.main-content-container {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.main-image-container img {
+  width: 150px;
+  height: 200px;
+}
+
+.main-image1 {
+  transform: rotate(-45deg);
+}
+
+.main-image2 {
+  transform: rotate(30deg);
+}
+
+.main-image3 {
+  transform: rotate(15deg);
+}
+
+.main-image4 {
+  transform: rotate(-30deg);
+}
+
+.main-image5 {
+  transform: rotate(30deg);
+}
+
+.main-image6 {
+  transform: rotate(-15deg);
+}
+
+
+.main-title {
   font-size: 64px;
+  margin: 50px;
 }
 
 .go-button {
-  position: fixed;
-  bottom: 30px;
-  right: 30px;
   background-color: transparent;
   border: none;
   cursor: pointer;
+  float: right;
+  margin: 0 20px;
 }
 
 .go-button a {
@@ -164,14 +190,14 @@ hr {
     width: 80px;
     height: 120px;
   }
+  .main-title {
+    font-size: 32px;
+  }
   .main-container {
     font-size: 32px;
   }
   .go-button a {
-    font-size: 16px;
-  }
-  .main-title {
-    font-size: 32px;
+    font-size: 24px;
   }
   .header-title{
     font-size: 32px;
