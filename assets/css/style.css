@@ -187,14 +187,17 @@ hr {
 
 @media (max-width: 768px) {
   .image-container img {
-    width: 80px;
-    height: 120px;
+    width: 60px;
+    height: 80px;
   }
   .main-title {
     font-size: 32px;
   }
   .main-container {
     font-size: 32px;
+  }
+  .go-button{
+    margin: 30px;
   }
   .go-button a {
     font-size: 24px;
