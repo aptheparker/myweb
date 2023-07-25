@@ -131,6 +131,12 @@ hr {
   margin: 30px;
 }
 
+.about-info-box a {
+  color: black;
+  font-size: 24px;
+  font-style: italic;
+}
+
 /* activity.html */
 .activity-content-container {
   display: flex;
