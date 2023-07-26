@@ -61,7 +61,7 @@ body {
   border: none;
   cursor: pointer;
   float: right;
-  margin: 0 20px;
+  margin: 0 30px;
 }
 
 .go-button a {
@@ -203,7 +203,8 @@ hr {
     font-size: 32px;
   }
   .go-button{
-    margin: 30px;
+    margin: 50px;
+    padding: 0;
   }
   .go-button a {
     font-size: 24px;
