@@ -250,3 +250,22 @@ hr {
     height: 500px;
   }
 }
+
+@media (min-width: 1600px) {
+  .main-image-container img {
+    width: 250px;
+    height: 300px;
+  }
+  .main-title {
+    font-size: 72px;
+  }
+  .main-container {
+    font-size: 32px;
+  }
+  .go-button a {
+    font-size: 48px;
+  }
+  .header-title{
+    font-size: 72px;
+  }
+}
