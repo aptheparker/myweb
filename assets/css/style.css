@@ -73,6 +73,9 @@ body {
 .header-title {
   font-size: 64px;
   margin: 0 20px;
+  display: flex;
+  align-items: center;
+  gap: 50px;
 }
 
 .nav-list {
