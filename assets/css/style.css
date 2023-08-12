@@ -1,12 +1,9 @@
-@font-face {
-  font-family: 'eagleLake-regular';
-  src: url("../fonts/EagleLake-Regular.ttf");
-}
+
 
 body {
   margin: 0;
   padding: 0;
-  font-family: eagleLake-regular;
+  font-family: "Inter", sans-serif;
   font-weight: bold;
   width: 100%;
   height: 100vh; /* Set the height to the full viewport height */
@@ -136,15 +133,15 @@ hr {
   margin: 30px;
 }
 
-/* activity.html */
-.activity-content-container {
+/* experience.html */
+.experience-content-container {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
   margin: 50px;
 }
 
-.activity-info-box {
+.experience-info-box {
   width: 400px;
   height: 500px;
   display: flex;
@@ -154,15 +151,15 @@ hr {
   border: 2px solid black;
 }
 
-/* skill.html */
-.skill-content-container {
+/* dev.html */
+.dev-content-container {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
   margin: 50px;
 }
 
-.skill-info-box {
+.dev-info-box {
   width: 600px;
   height: 500px;
   display: flex;
