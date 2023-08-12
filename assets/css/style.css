@@ -227,22 +227,22 @@ hr {
     height: 500px;
   }
 
-  .activity-content-container {
+  .experience-content-container {
     display: flex;
     flex-direction: column;
     gap: 20px;
   }
-  .activity-info-box {
+  .experience-info-box {
     width: 350px;
     height: 500px;
   }
 
-  .skill-content-container {
+  .dev-content-container {
     display: flex;
     flex-direction: column;
     gap: 20px;
   }
-  .skill-info-box {
+  .dev-info-box {
     width: 350px;
     height: 500px;
   }
